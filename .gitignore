@@ -1,0 +1,48 @@
+# Java/Spring Boot/Maven #
+##########################
+*.class
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+hs_err_pid*
+
+# Maven specific #
+target/
+!**/src/main/resources/**
+!**/src/test/resources/**
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+# IDEs and editors #
+####################
+.idea
+*.iml
+*.swp
+*~.nib
+local.properties
+.swo
+*.sublime-workspace
+
+# Angular #
+###########
+/node_modules
+/dist
+/tmp
+*.log
+.angular/cache/
+
+
+# OS files #
+############
+.DS_Store
+Thumbs.db

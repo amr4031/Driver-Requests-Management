@@ -1,0 +1,46 @@
+mat-icon {
+    margin-right: 8px;
+  }
+  
+  h2 mat-icon {
+    vertical-align: auto; /* Aligns the icon with the text */
+  }
+
+  .form-icon {
+    vertical-align: middle; /* Aligns icon with the middle of the text */
+    margin-right: 5px; /* Adds some space between the icon and the text */
+  }
+
+  label {
+    line-height: 1.5; /* Adjust based on your design */
+    display: inline-flex; /* Aligns items vertically */
+    align-items: center; /* Center alignment for items */
+  }
+
+
+  .mat-icon {
+    font-size: 20px; /* Adjust based on your design */
+    height: 20px; /* Match font-size for consistent sizing */
+    width: 20px; /* Match font-size for consistent sizing */
+  }
+
+
+  .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none; /* Remove default border */
+  }
+  
+  .card-header {
+    background-color: #007bff; /* Use your primary color */
+    color: white; /* Contrast text color */
+  }
+  
+  .btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+  
+  /* Add padding inside the card body for better spacing */
+  .card-body {
+    padding: 20px;
+  }

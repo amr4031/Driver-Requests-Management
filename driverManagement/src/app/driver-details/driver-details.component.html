@@ -1,0 +1,29 @@
+<div class="container mt-5" *ngIf="driver as localDriver">
+  <form (ngSubmit)="updateDriver()" class="needs-validation" novalidate>
+    <div class="mb-3">
+      <label for="name" class="form-label"><i class="fas fa-user"></i> Name</label>
+      <input type="text" class="form-control" id="name" placeholder="{{localDriver.driverName}}" readonly>
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label"><i class="fas fa-envelope"></i> Email</label>
+      <input type="email" class="form-control" id="email" placeholder="{{localDriver.driverEmail}}" readonly>
+    </div>
+    <div class="mb-3">
+      <label for="mobile" class="form-label"><i class="fas fa-phone"></i> Mobile</label>
+      <input type="text" class="form-control" id="mobile" placeholder="{{localDriver.driverMobile}}" readonly>
+    </div>
+    <div class="mb-3">
+      <label for="status" class="form-label"><i class="fas fa-tasks"></i> Request Status</label>
+      <select class="form-select" id="status" [(ngModel)]="localDriver.requestStatus" name="status">
+        <option value="PENDING">Pending</option>
+        <option value="APPROVED">Approved</option>
+        <option value="REJECTED">Rejected</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="notes" class="form-label"><i class="fas fa-sticky-note"></i> Notes to Requester</label>
+      <textarea class="form-control" id="notes" rows="3" [(ngModel)]="localDriver.notesToRequester" name="notes"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary"><i class="fas fa-save"></i> Update</button>
+  </form>
+</div>

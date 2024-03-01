@@ -35,11 +35,11 @@ local.properties
 
 # Angular #
 ###########
-/node_modules
-/dist
-/tmp
-*.log
-.angular/cache/
+driverManagement/node_modules
+driverManagement/dist
+driverManagement/tmp
+driverManagement/*.log
+driverManagement/.angular/cache/
 
 
 # OS files #

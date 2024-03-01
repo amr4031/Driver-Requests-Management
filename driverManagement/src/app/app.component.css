@@ -1,0 +1,28 @@
+/* styles.css or app.component.css */
+
+/* Active state styling */
+.nav-link.active {
+    font-weight: bold;
+    color: #007bff !important; /* Bootstrap primary color, but you can choose your own */
+  }
+  
+  /* Hover state styling */
+  .nav-link:hover {
+    color: #0056b3 !important; /* Darker shade for hover, choose what fits your design */
+    background-color: rgba(0, 123, 255, 0.05); /* Slightly lighter background on hover */
+  }
+.navbar-brand {
+  padding-left: 20px; /* Adjust the padding value as needed */
+}
+
+.content-card {
+  margin: 20px; /* Adds margin around the card for spacing */
+}
+
+.content-card .card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
+}
+
+.content-card .card-body {
+  padding: 20px; /* Adds padding inside the card for content spacing */
+}

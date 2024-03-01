@@ -1,0 +1,60 @@
+/* drivers-list.component.css */
+
+/* Styling for table headers and cells */
+.table th, .table td {
+  text-align: center; 
+  vertical-align: middle; 
+  max-width: 250px; 
+  min-width: 100px; 
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  word-wrap: break-word; 
+  word-break: break-word; 
+
+}
+@media (max-width: 768px) {
+  .table th, .table td {
+    font-size: 12px; /* Smaller font size for small devices */
+    padding: 8px; /* Adjust padding to fit more content */
+  }
+}
+/* Transition effects for cells on hover */
+.table-hover tbody tr td {
+  transition: max-height 0.05s ease-in-out, font-size 0.05s ease-in-out; 
+  max-height: 20px; 
+  font-size: 14px; 
+}
+
+
+.table-hover tbody tr:hover td {
+  max-height: 100px; /* Increased max-height to accommodate expanded content */
+  white-space: normal; /* Allows text wrapping */
+  font-size: 16px; /* Slightly larger font size on hover */
+}
+/* Removes the right border for the last cell in each row for a cleaner look */
+.table th:last-child, .table td:last-child {
+  border-right: none;
+}
+
+
+
+/* Status color coding */
+.status-pending {
+  color: #ff6a07; /* Amber for pending */
+}
+
+.status-approved {
+  color: #28a745; /* Green for approved */
+}
+
+.status-rejected {
+  color: #dc3545; /* Red for rejected */
+}
+
+/* Edit icon styling */
+.edit-icon {
+  cursor: pointer;
+  color: rgb(124, 124, 152); /* Custom color for the edit icon */
+  font-size: 20px; /* Adjusted to use a consistent icon size */
+}

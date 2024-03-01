@@ -1,0 +1,34 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+/* src/styles.css */
+body {
+    background-image: url('/assets/images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  :root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+  }
+
+
+  .btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+  
+  /* Style links with the primary color */
+  a, a:visited {
+    color: var(--primary-color);
+  }
+  
+  /* Use the secondary color for less prominent elements */
+  .text-secondary {
+    color: var(--secondary-color);
+  }
